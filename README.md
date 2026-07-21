@@ -145,3 +145,5 @@ Being explicit about what this project does *not* do:
 - **ImageNet normalization statistics** applied to the custom CNN, where EuroSAT's own channel means/stds would be more principled. Correct for the ResNet branch; a convention rather than a justified choice for the scratch model.
 - **RGB only.** EuroSAT also ships a 13-band multispectral version. The RGB subset discards near-infrared, a strong signal for separating vegetation types — precisely the classes that underperform here. Worth testing, not tested.
 - **No LR schedule, no fine-tuning of ResNet's upper blocks, no checkpointing.** Weights aren't persisted, so evaluation must follow training in the same session.
+
+built with NextWork Projects
